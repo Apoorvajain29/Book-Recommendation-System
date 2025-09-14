@@ -14,7 +14,7 @@ from gradio.themes import Monochrome
 from sentence_transformers import SentenceTransformer
 
 class HuggingFaceEmbeddings(Embeddings):
-    def __init__(self, model_id="sentence-transformers/LaBSE"):
+    def __init__(self, model_id="BAAI/bge-large-en-v1.5"):
         print(f"Downloading or loading the embedding model: {model_id}. This may take a while.")
         self.model = SentenceTransformer(model_id)
 
